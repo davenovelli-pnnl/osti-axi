@@ -1,0 +1,39 @@
+{
+  "name": "osti-axi",
+  "version": "0.1.0",
+  "description": "Token-efficient OSTI.GOV retrieval and workspace downloads for agents",
+  "type": "module",
+  "bin": {
+    "osti-axi": "./dist/bin/osti-axi.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@toon-format/toon": "4.1.1",
+    "axi-sdk-js": "0.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "overrides": {
+    "axi-sdk-js": {
+      "@toon-format/toon": "4.1.1"
+    }
+  },
+  "license": "MIT"
+}
