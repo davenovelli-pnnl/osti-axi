@@ -7,6 +7,8 @@ It is read-only against OSTI: it never publishes, edits, submits, or manages acc
 ## Install
 
 ```sh
+git clone https://github.com/davenovelli-pnnl/osti-axi.git
+cd osti-axi
 npm install -g .
 osti-axi --version
 ```
